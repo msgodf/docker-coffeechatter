@@ -23,5 +23,6 @@ WORKDIR /home/coffeechatter/coffeechatter-master
 RUN npm install dustjs-linkedin dustjs-helpers socket.io@0.9 dust-compiler debug gravatar underscore                                                                                                  
 # Compile Dust templates
 RUN mkdir -p public/js/compiled                                                                    
-RUN node node_modules/dust-compiler/lib/dust-compiler.js -s src/dusts -d public/js/compiled/ --bootstrap                                                                                              
+RUN npm run dustc
+
 ENTRYPOINT node app.js  
