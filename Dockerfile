@@ -14,7 +14,7 @@ USER coffeechatter
 WORKDIR /home/coffeechatter
 
 # Download CoffeeChatter from GitHub                                                                                                   
-RUN wget https://github.com/msgodf/coffeechatter/archive/master.zip                                
+RUN wget https://github.com/simonlord/coffeechatter/archive/master.zip                                
 RUN unzip master.zip                                                                               
                                                                                                    
 WORKDIR /home/coffeechatter/coffeechatter-master                                                                 
